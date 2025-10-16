@@ -121,6 +121,20 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
         ) {
             Text(text = "Konten Utama")
         }
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(300.dp)
+                .background(Color.Cyan),
+            contentAlignment = Alignment.Center
+        ) {
+            Image(
+                painter = gambar,
+                contentDescription = null,
+                contentScale = ContentScale.Fit
+            )
+        }
+
     }
 }
 
