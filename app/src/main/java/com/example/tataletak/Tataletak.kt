@@ -11,6 +11,10 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.ui.Alignment
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
+import androidx.compose.ui.graphics.Color
 
 @Composable
 fun TataLetakColumn(modifier: Modifier) {
@@ -86,6 +90,31 @@ fun TataLetakRowColumn(modifier: Modifier) {
             Text(text = "Komponen1Kolom2")
             Text(text = "Komponen2Kolom2")
             Text(text = "Komponen3Kolom2")
+        }
+    }
+}
+
+@Composable
+fun TataLetakBoxColumnRow(modifier: Modifier) {
+    Column {
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(110.dp)
+                .background(Color.Yellow),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(text = "Header")
+        }
+        Spacer(modifier = Modifier.height(10.dp))
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(300.dp)
+                .background(Color.Cyan),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(text = "Konten Utama")
         }
     }
 }
