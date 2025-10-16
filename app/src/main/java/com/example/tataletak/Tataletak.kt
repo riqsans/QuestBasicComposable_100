@@ -105,7 +105,7 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
             modifier = modifier
                 .fillMaxWidth()
                 .height(110.dp)
-                .background(Color.Yellow),
+                .background(Color.Red),
             contentAlignment = Alignment.Center
         ) {
             Text(text = "Header")
@@ -141,6 +141,7 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
                 modifier = Modifier.align(Alignment.Center)
             )
         }
+
 
     }
 }
