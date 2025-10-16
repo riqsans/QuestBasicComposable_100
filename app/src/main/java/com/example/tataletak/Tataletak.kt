@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.ui.Alignment
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Spacer
@@ -17,11 +16,11 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.foundation.Image
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.sp
+import com.example.tataletak.R
 
 @Composable
 fun TataLetakColumn(modifier: Modifier) {
@@ -103,7 +102,7 @@ fun TataLetakRowColumn(modifier: Modifier) {
 
 @Composable
 fun TataLetakBoxColumnRow(modifier: Modifier) {
-    val gambar = painterResource(id = R.drawable.logonotasibalok.jpg)
+    val gambar = painterResource(id = R.drawable.logonotasibalok)
     Column {
         Box(
             modifier = modifier
