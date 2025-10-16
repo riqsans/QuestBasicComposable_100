@@ -19,6 +19,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.foundation.Image
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun TataLetakColumn(modifier: Modifier) {
@@ -100,7 +103,7 @@ fun TataLetakRowColumn(modifier: Modifier) {
 
 @Composable
 fun TataLetakBoxColumnRow(modifier: Modifier) {
-    val gambar = painterResource(id = R.drawable.logonotasibalok)
+    val gambar = painterResource(id = R.drawable.logonotasibalok.jpg)
     Column {
         Box(
             modifier = modifier
